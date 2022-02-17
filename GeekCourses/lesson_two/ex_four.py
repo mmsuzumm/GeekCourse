@@ -2,5 +2,5 @@ given_lst = ['инженер-конструктор Игорь', 'главный
 
 for meaning_lst in given_lst:
 
-    print('Привет,', str.capitalize(meaning_lst.split()[-1]))  # взять последний элемент массива, применить к нему
+    print('Привет,', (meaning_lst.split()[-1]).capitalize())  # взять последний элемент массива, применить к нему
     # метод capitalize типа str
