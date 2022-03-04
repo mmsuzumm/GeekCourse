@@ -21,9 +21,9 @@ hobby_f.seek(0)
 users_lst = list(zip_longest(csv_user, csv_hobby))
 for name in users_lst:
     users_dict[' '.join(name[0])] = name[1]  # Заполняем словарь
-with open('general.txt', 'w', encoding='UTF-8') as general:
-    for key, val in users_dict.items():
-        general.write('{}: {}\n'.format(key, val))  # какой тип файла должен быть на выходе не написано, поэтому сделал простым путем, в txt
+    with open('general.txt', 'w', encoding='UTF-8') as general:
+        for key, val in users_dict.items():
+            general.write('{}: {}\n'.format(key, val))  # какой тип файла должен быть на выходе не написано, поэтому сделал простым путем, в txt
 
 hobby_f.close()
 users_f.close()
